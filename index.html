@@ -181,7 +181,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -191,7 +191,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -257,7 +257,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-15T16:02:29+08:00">
                 2017-12-15
@@ -300,8 +300,14 @@
         
           
             <p>date: 2017-12-15 16:02:29</p>
-<h2 id="tags-语音功能"><a href="#tags-语音功能" class="headerlink" title="tags:语音功能"></a>tags:语音功能</h2><p>鼠标放在这段话上，你将听到：“我爱你，杨瑞琳”</p>
-
+<h2 id="tags-语音功能"><a href="#tags-语音功能" class="headerlink" title="tags:语音功能"></a>tags:语音功能</h2><p>鼠标放在这段话上，你将听到：“</p><p onmouseover="speech();">我爱你，杨瑞琳</p>”<p></p>
+<script>
+    function speak() {
+    var speechSU =new window.SpeechSynthesisUtterance();
+    speechSU.text ='你指着我干嘛?';
+    window.speechSynthesis.speak(speechSU);
+  }
+</script>
           
         
       
@@ -378,7 +384,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-16T17:33:04+08:00">
                 2017-11-16
@@ -497,7 +503,7 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">Veröffentlicht am</span>
               
               <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-16T17:08:50+08:00">
                 2017-11-16
@@ -639,7 +645,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
                 <a href="/archives/">
               
                   <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
             
@@ -691,7 +697,7 @@ Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [docume
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
 
 
 
